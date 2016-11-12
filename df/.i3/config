@@ -156,11 +156,11 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 1:
 set $ws2 2:
 set $ws3 3:
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
+set $ws4 4:
+set $ws5 5:♄
+set $ws6 6:♅
+set $ws7 7:♆
+set $ws8 8:♇
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -280,7 +280,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec i3lock-fancy -p -- scrot -z
 
 # Autostart applications
 ## adjustment of i3bar battery reading (only run at the very first login):
@@ -295,7 +295,8 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 5 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker i3lock-fancy -p -- scrot -z
+
 exec_always --no-startup-id setcursor
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)

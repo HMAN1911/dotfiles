@@ -41,4 +41,3 @@ export PATH="/home/h/.gem/ruby/2.3.0/bin:$PATH"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-fish

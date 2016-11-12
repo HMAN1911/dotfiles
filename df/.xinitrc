@@ -37,6 +37,8 @@ esac
 
 xrandr --dpi 192
 
-xset r raate 170 30
+xset r rate 170 30
+xgamma -gamma 0.8
+
 
 exec i3
