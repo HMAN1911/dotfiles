@@ -1,6 +1,6 @@
 [options]
 
-font = Operator Mono Book 11
+font = Operator Mono Book 12
 scrollback_lines = 10001
 clickable_url    = true
 browser          = google-chrome-stable 
@@ -9,6 +9,7 @@ visible_bell     = true
 mouse_autohide   = true
 audible_bell     = true
 allow_bold = false
+
 
 [colors]
 

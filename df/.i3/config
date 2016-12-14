@@ -8,11 +8,11 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window none 
-new_float normal
+new_window pixel 3
+new_float 1pixel
 
 # Hide borders
-hide_edge_borders none
+# hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
@@ -108,7 +108,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
-workspace_auto_back_and_forth yes
+# workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
@@ -153,14 +153,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
 
-set $ws1 1:
-set $ws2 2:
-set $ws3 3:
-set $ws4 4:
-set $ws5 5:♄
-set $ws6 6:♅
-set $ws7 7:♆
-set $ws8 8:♇
+set $ws1 1:1
+set $ws2 2:2
+set $ws3 3:3
+set $ws4 4:4
+set $ws5 5:5
+set $ws6 6:6
+set $ws7 7:7
+set $ws8 8:8
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -194,8 +194,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 
 # Open applications on specific workspaces
-assign [class="Google-chrome"] $ws3
-assign [class="Spotify"] $workspace10
+# assign [class="Google-chrome"] $ws3
+# assign [class="Spotify"] $workspace10
 
 
 # Open specific applications in floating mode
@@ -285,6 +285,7 @@ bindsym $mod+9 exec i3lock-fancy -p -- scrot -z
 # Autostart applications
 ## adjustment of i3bar battery reading (only run at the very first login):
 #exec --no-startup-id /usr/bin/adjust_i3statusconf
+exec xset r rate 170 30
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton --backend glx --paint-on-overlay --vsync opengl-swc &
 exec --no-startup-id nm-applet
@@ -302,6 +303,7 @@ exec_always --no-startup-id setcursor
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	status_command i3status
+    position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -321,7 +323,7 @@ bar {
 #                                  border  backgr. text
 		focused_workspace  #c3d82c #c3d82c #2B2C2B
 		active_workspace   #c3d82c #c3d82c #FDF6E3
-		inactive_workspace #000000 #000000 #f5f5f5
+		inactive_workspace #253337 #253337 #f5f5f5
 		urgent_workspace   #ff5252 #ff5252 #FDF6E3
 	}
 }
@@ -331,21 +333,21 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
-client.focused          #808280 #808280 #80FFF9 #FDF6E3
+client.focused          #97e0ff #97e0ff #80FFF9 #FDF6E3
 client.focused_inactive #434745 #434745 #16A085 #454948
-client.unfocused        #434745 #434745 #16A085 #454948
+client.unfocused        #434745 #1f222d #16A085 #454948
 client.urgent           #CB4B16 #FDF6E3 #16A085 #268BD2
 client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 
-client.background       #2B2C2B
+client.background       #f99170
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-gaps inner 18
-gaps outer -4
+gaps inner 16
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
