@@ -66,7 +66,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec termite -e 'bmenu'
-bindsym $mod+F2 exec google-chrome-stable 
+bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
@@ -286,6 +286,8 @@ bindsym $mod+9 exec i3lock-fancy -p -- scrot -z
 ## adjustment of i3bar battery reading (only run at the very first login):
 #exec --no-startup-id /usr/bin/adjust_i3statusconf
 exec xset r rate 170 30
+exec xinput set-prop 12 287 0.9
+exec xgamma -gamma 0.9
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton --backend glx --paint-on-overlay --vsync opengl-swc &
 exec --no-startup-id nm-applet
@@ -357,7 +359,7 @@ gaps outer 0
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
