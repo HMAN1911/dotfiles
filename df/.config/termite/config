@@ -3,12 +3,12 @@
 font = Operator Mono Book 12
 scrollback_lines = 10001
 clickable_url    = true
-browser          = google-chrome-stable 
+browser          = google-chrome-stable
 allow_italic     = true
-visible_bell     = true 
+visible_bell     = true
 mouse_autohide   = true
 audible_bell     = true
-allow_bold = false
+allow_bold       = false
 
 
 [colors]
@@ -17,7 +17,7 @@ allow_bold = false
 foreground      = #a1b0b8
 foreground_bold = #a1b0b8
 cursor          = #a1b0b8
-background      = rgb(37,51,55) 
+background      = rgb(37,51,55)
 
 # black
 color0  = #252525
@@ -50,4 +50,3 @@ color14 = #00acc1
 # white
 color7  = #f5f5f5
 color15 = #f5f5f5
-

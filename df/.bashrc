@@ -33,6 +33,8 @@ colors() {
 
 
 export PATH="/home/h/.gem/ruby/2.3.0/bin:$PATH"
+export PATH="/home/h/.gem/ruby/2.4.0/bin:$PATH"
+
 
 [[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
 
@@ -40,4 +42,3 @@ export PATH="/home/h/.gem/ruby/2.3.0/bin:$PATH"
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
