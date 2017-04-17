@@ -1,6 +1,6 @@
 [options]
 
-font = Operator Mono Book 12
+font Bitstream Vera Sans Mono= 10
 scrollback_lines = 10001
 clickable_url    = true
 browser          = google-chrome-stable

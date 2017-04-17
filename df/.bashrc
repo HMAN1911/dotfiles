@@ -32,9 +32,9 @@ colors() {
 }
 
 
-export PATH="/home/h/.gem/ruby/2.3.0/bin:$PATH"
 export PATH="/home/h/.gem/ruby/2.4.0/bin:$PATH"
-
+export PATH=~/.local/bin:$PATH
+export PATH=./bin:$PATH
 
 [[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
 
