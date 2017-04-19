@@ -1,6 +1,6 @@
 [options]
 
-font Bitstream Vera Sans Mono= 10
+font = monaco 9
 scrollback_lines = 10001
 clickable_url    = true
 browser          = google-chrome-stable
