@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".git"
+	],
+	"font_face": "Fira Code",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 2,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
