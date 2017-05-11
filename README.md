@@ -1,19 +1,18 @@
 # dotfiles
 
-## summary of software:
+## utils
 
 * wm: i3 gaps
 * pdf viewer: zathura
 * terminal emulator: termite
-* shell: fish
-* code editor: sublime 3, vscode
+* shell: fish, bash
+* code editor: sublime3, vim
 * fm: ranger, thunar
 * video player: smplayer
 * lxappearance
 * rofi
 * arandr
 * gpicview
-
 
 ## font rendering
 
