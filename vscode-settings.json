@@ -1,0 +1,14 @@
+{
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": false,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.colorTheme": "One Monokai",
+  "editor.fontFamily": "OperatorMono-Light",
+  "editor.minimap.enabled": false,
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.js": "javascriptreact"
+  }
+}
